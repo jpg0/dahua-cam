@@ -14,7 +14,7 @@ class DahuaCam extends events.EventEmitter {
     this.username = options.username;
     this.password = options.password;
 
-    this.baseUri = `http://${options.hostname}:${options.port || 80}`;
+    this.baseUri = `http://${options.host}:${options.port || 80}`;
   };
 
   // set up persistent connection to receive alarm events from camera
