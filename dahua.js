@@ -76,7 +76,7 @@ class DahuaCam extends events.EventEmitter {
   }
 
   name() {
-    return this._req('magicBox.cgi?action=getMachineName').then(d => d.split('=')[1]);
+    return this._req('magicBox.cgi?action=getMachineName').then(d => d.split('=')[1].trim());
   }
 
   snapshot(channel) {
