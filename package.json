@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "debug": "^4.1.1",
+    "net-keepalive": "^1.3.0",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  },
+  "description": "Dahua API Module",
+  "devDependencies": {},
+  "keywords": [
+    "Dahua",
+    "PTZ",
+    "IPC",
+    "Security Camera",
+    "Home Automation"
+  ],
+  "license": "GPL-3.0",
+  "main": "dahua.js",
+  "name": "dahua-cam",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpg0/dahua-cam.git"
+  },
+  "version": "1.0.0"
+}
