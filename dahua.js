@@ -2,7 +2,6 @@
 // Dahua HTTP API Module
 var events    = require('events');
 
-const NetKeepAlive = require('net-keepalive')
 const rp = require('request-promise');
 const request = require('request');
 const debug = require('debug')('http')
@@ -19,6 +18,10 @@ class DahuaCam extends events.EventEmitter {
 
   // set up persistent connection to receive alarm events from camera
   listenForEvents(eventNames) {
+
+    //defer this module load as it's only for listening
+    let NetKeepAlive = require('net-keepalive')
+
     eventNames = eventNames || [
       'VideoMotion', 
       'VideoLoss', 
